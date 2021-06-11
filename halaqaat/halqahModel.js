@@ -7,7 +7,7 @@ const halqahSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  imageURL: {
+  image: {
     type: String,
     required: true,
   },
@@ -36,7 +36,7 @@ const halqahSchema = mongoose.Schema({
     country: { type: String },
   },
 
-  classHours: {
+  time: {
     start: {
       type: String,
     },
@@ -46,7 +46,7 @@ const halqahSchema = mongoose.Schema({
     },
   },
   occurrence: { type: String, enum: ['weekly', 'biweekly', 'monthly'] },
-  halqahTypes: [
+  categories: [
     {
       type: String,
       enum: [
